@@ -8,8 +8,6 @@ Kod powinien być możliwy do uruchomienia z użyciem środowiska uruchomieniowe
 Nie można korzystać z dodatkowych bibliotek, czyli należy zastosować jedynie Vanilla JS.
 */
 
-// test
-
 
 //let stringIn = "_Jeden8..Dwa2...Trzy;;;;Cztery_Pięć";
 let textIn = "";
