@@ -403,7 +403,7 @@ nav .container{
     width: 100%;
     padding:36px 36px 0 36px;
     border: solid 1px var(--very-light-pink);
-    background-color: var(--white);
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
 }
