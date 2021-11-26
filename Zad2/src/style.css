@@ -79,8 +79,8 @@ nav a:link, a:visited   {
     line-height: 1;
 }
   
-a:hover     { color:#333;}
-a:active    { color:#333;}
+a:hover, a:active     { color:var(--black);}
+
 .menu_item--start a:hover{color: white;}
   
 h1{
@@ -166,7 +166,6 @@ h4{
     margin-right: 20px;
 }
   
-  
 nav {
     position: fixed;
     margin: auto;
@@ -177,9 +176,9 @@ nav {
     z-index: 999;
     transition: 0.4s;
 }
+
 nav.active_shadow{
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
-    
 }
 
 .menu {
@@ -196,7 +195,6 @@ nav.active_shadow{
     transition: height 0.4s ease;
 }
   
-  
 nav ul {
     list-style-type: none;
     font-size: 14px;
@@ -207,15 +205,15 @@ nav ul {
     align-items: center;
 }
   
-  
 nav li.active{
-    color:#333;
+    color:var(--black);
 }
 
 .menu_img {
     width: 48px;
     height: 48px; 
 }
+
 #menu_img_trigger{
     width: 24px;
     height: 24px; 
@@ -254,13 +252,13 @@ nav .container{
     justify-content: space-between;
 }
   
-  
 .section_banner {
     margin: 0 0 40px 0;
     padding: 0;
     border: solid 1px var(--very-light-pink);
     background-color: #fff;
 }
+
 .section_banner_inner {
     margin: 15px 15px;
     padding-left: 64px;
@@ -274,9 +272,9 @@ nav .container{
 }
   
 .section_banner_inner p {
+    font-size: 12px;
     line-height: 1.33;
 }
-  
    
 .section_banner_inner img{
     width: 100%;
@@ -293,7 +291,6 @@ nav .container{
     flex-direction:column;
     cursor: pointer;
     transition: box-shadow .2s;
-
 }
 
 .section_pages:hover {
@@ -369,9 +366,7 @@ nav .container{
 
 .bar_graph--purple{
     background-color: #6272c7;
-
 }
-  
 
 .section_shop {
     background-color: white;
@@ -482,7 +477,6 @@ nav .container{
     font-size: 0px;
 }
 
-
 .section_quote_name {
     font-size: 14px;
     line-height: 2.14;
@@ -584,7 +578,6 @@ p.tweet_date::before {
     top: 6px;
 }
   
-  
 .footer_quick_links a{
     color: var(--white);
     text-decoration: none;
@@ -594,7 +587,6 @@ p.tweet_date::before {
   
 .footer_quick_links a:hover     { color:var(--brown-grey);}
 .footer_quick_links a:active    { color:var(--brown-grey);}
-
 
 .footer_quick_links li{
     margin-bottom: 10px;
@@ -651,16 +643,14 @@ p.tweet_date::before {
     padding: 0 0;
     font-size:0 ;
     display:flex;
-    align-self:end;
     cursor: pointer;
 }
   
 /* X-Small devices (portrait phones, less than 576px) */
 @media  (max-width: 576px) {
+
     .section_banner_inner h1 { font-size: 40px; line-height: 1.3; }
     .section_banner_underline::after { width: 168px; height: 22px; margin-top:-21px; }
-    .section_banner_inner p { font-size: 12px; line-height: 1.33; }
-
     .section_quote_main{ font-size: 14px; line-height: 2.14; }
 
     .img--none{ display: none; }
@@ -693,12 +683,10 @@ p.tweet_date::before {
   
 /* Small devices (landscape phones, 576px and up) */
 @media  (min-width: 576px) { 
+
     .main{margin-top: 96px;}
     .section_banner_inner h1{ font-size: 40px; line-height: 1.3; }
     .section_banner_underline::after{ width: 168px; height: 22px; margin-top:-21px; }
-
-    .section_banner_inner p { font-size: 12px; line-height: 1.33; }
-
     .section_quote_main{ font-size: 14px; line-height: 2.14; }
 
     .img--none{display:none;}
@@ -735,21 +723,6 @@ p.tweet_date::before {
 /* Medium devices (tablets, 768px and up)*/
 @media  (min-width: 768px) {
 
-    .section_banner_inner h1{
-        font-size: 40px;
-        line-height: 1.3;
-    }
-
-    .section_banner_inner p {
-        font-size: 12px;
-        line-height: 1.33;
-    }
-    .section_banner_underline::after{
-        width: 168px;
-        height: 22px;
-        margin-top:-21px;
-    }
-
     .img--none{display:inline-flex;}
 
     .section_banner_inner{ padding: 24px 0px 24px 34px; }
@@ -764,25 +737,25 @@ p.tweet_date::before {
     .section_banner_inner div{ flex-basis: 0; flex-grow: 1;}
     .section_banner_inner .button--purple{margin-right: 16px;} /* not 20px, to fix the button not going down  */
 
-    }
+}
   
   
-    /* Medium devices (tablets, 768px and up) -  to fix the button not going down */ 
-    @media  (min-width: 775px) {
-        .section_banner_inner .button--purple{margin-right: 20px;}
+/* Medium devices (tablets, 768px and up) -  to fix the button not going down */ 
+@media  (min-width: 775px) {
+    .section_banner_inner .button--purple{margin-right: 20px;}
 
-    }
+}
 
 
 /* Large devices (desktops, 992px and up)*/
 @media  (min-width: 992px) { 
+
     .menu{height:88px;}
     main{margin-top: 128px;}
     #menu_img_trigger{display: none;/*visibility: hidden;*/}
     #mobile_nav_ul{display: none !important;}
     nav ul { flex-direction: row; position: unset; border-radius: 0px;display: flex;}
 
-    .section_banner_inner h1{ font-size: 40px; line-height: 1.3; }
     .section_banner_inner p { font-size: 14px; line-height: 1.29; }
     
     .section_shop, .section_portfolio {padding: 50px 50px 60px 50px; align-content:space-evenly;}
@@ -792,11 +765,7 @@ p.tweet_date::before {
     .footer_item {width:25%;}
     
     .section_pages{flex-direction:unset;}
-    .section_quote_main{
-        font-size: 18px;
-        line-height: 1.67;
-        margin-left: 80px;    margin-top: 0px;
-    }
+    .section_quote_main{ font-size: 18px; line-height: 1.67; margin-left: 80px; margin-top: 0px; }
     .section_quote_name { margin-left: 80px;}
 
     .section_banner_inner{ padding: 34px 8px 34px 44px; }
@@ -827,21 +796,10 @@ p.tweet_date::before {
 /* X-Large devices (large desktops, 1200px and up)*/
 @media  (min-width: 1200px) { 
 
-    .section_banner_inner h1{
-        font-size: 52px;
-        line-height: 1.27;
-    }
+    .section_banner_inner h1{ font-size: 52px; line-height: 1.27; }
     
-    .section_banner_inner p {
-        font-size: 18px;
-        line-height: 1.33;
-    }
-    .section_banner_underline::after{
-        width: 220px;
-        height: 28px;
-        margin-top:-27px;
-
-    }
+    .section_banner_inner p { font-size: 18px; line-height: 1.33; }
+    .section_banner_underline::after{ width: 220px; height: 28px; margin-top:-27px; }
     .section_banner_inner{ padding: 44px 8px 44px 64px; }
     .container{ margin-left: 56px; margin-right: 56px; }
     .section_logo{ padding-top: 60px; padding-bottom: 60px;}       
@@ -854,47 +812,20 @@ p.tweet_date::before {
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media  (min-width: 1400px) { 
     
-    .section_banner_inner h1{
-        font-size: 60px;
-    }
-    
-    .section_banner_inner p {
-        font-size: 20px;
-        line-height: 1.4;
-    }
-    
-    .section_banner_underline::after{
-        width: 252px;
-        height: 30px;
-    }
+    .section_banner_inner h1{ font-size: 60px; }
+    .section_banner_inner p { font-size: 20px; line-height: 1.4; }
+    .section_banner_underline::after{ width: 252px; height: 30px; }
 
     .footer_all { column-gap: 60px;}
-     .section_banner_inner{ padding: 48px 8px 48px 66px; }
-        
+    .section_banner_inner{ padding: 48px 8px 48px 66px; }
     
 }
 
 /* XX-Large+ devices (larger desktops, 1512px and up - nice padding)*/
 @media  (min-width: 1512px) {
 
-    section{
-        max-width: 1400px;
-        margin-right: auto;
-        margin-left: auto;
-
-    }
-    .footer_all{
-        max-width: 1400px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .container{
-        max-width: 1400px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .menu .container{ margin-left: 56px; margin-right: 56px; }
-
+    section{ max-width: 1400px; margin-right: auto; margin-left: auto; }
+    .footer_all{ max-width: 1400px; margin-right: auto; margin-left: auto; }
+    .container{ width: 1400px; margin-right: auto; margin-left: auto; }
 
 }
