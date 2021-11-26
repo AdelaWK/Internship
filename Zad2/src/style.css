@@ -64,8 +64,6 @@ nav a:link, a:visited   {
     text-transform: uppercase;
 }
   
-  
-  
 .menu_item--start a:link, .menu_item--start a:visited {
     padding: 0px 0px 0px 26px; 
 }
@@ -504,7 +502,7 @@ nav .container{
 }
   
 .section_start {
-    background-color: var(--egg-shell)    ;
+    background-color: var(--egg-shell);
     width: 100%;
     padding: 60px 40px;
     margin-top: 40px;
@@ -752,7 +750,7 @@ p.tweet_date::before {
 
     .menu{height:88px;}
     main{margin-top: 128px;}
-    #menu_img_trigger{display: none;/*visibility: hidden;*/}
+    #menu_img_trigger{display: none;}
     #mobile_nav_ul{display: none !important;}
     nav ul { flex-direction: row; position: unset; border-radius: 0px;display: flex;}
 
